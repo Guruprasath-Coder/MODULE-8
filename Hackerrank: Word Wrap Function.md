@@ -26,9 +26,28 @@ To write a Python function that takes a long string and a specified width, and r
 
 
 ## 🧪 Program
-Add Code Here
+```python
+def wrap(string, max_width):
+    wrapped_lines = []
+    for i in range(0, len(string), max_width):
+        wrapped_lines.append(string[i:i+max_width])
+    return '\n'.join(wrapped_lines)
+
+
+text = "ThisIsALongStringThatNeedsToBeWrappedProperly"
+width = 8
+
+result = wrap(text, width)
+print(result)
+
 
 ## Sample Output
+ThisIsAL
+ongStrin
+gThatNee
+dsToBeWr
+appedPro
+perly
 
 ## Result
-
+The program successfully implements a word wrap function in Python, splitting a long string into multiple lines such that each line has at most the specified width.
