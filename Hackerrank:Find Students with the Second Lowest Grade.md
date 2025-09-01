@@ -26,7 +26,7 @@ To write a Python program to:
 ---
 
 ## 💻  Program
-
+```python
 # Number of students
 n = int(input("Enter number of students: "))
 
