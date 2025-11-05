@@ -28,28 +28,18 @@ To maintain a dictionary of students with their marks in five subjects, calculat
 ---
 
 ## 💻 PROGRAM:
-```python
-student_marks = {
-    "Alice": [85, 92, 78, 90, 88],
-    "Bob": [79, 85, 82, 87, 90],
-    "Charlie": [92, 90, 95, 89, 94],
-    "David": [88, 84, 86, 91, 85]
-}
-
-total_marks = {}
-for student, marks in student_marks.items():
-    total_marks[student] = sum(marks)
-
-
-topper = max(total_marks, key=total_marks.get)
-
-print("Total Marks:", total_marks)
-print("Topper:", topper, "with", total_marks[topper], "marks")
-
-
+```
+amount=25000
+discount_percentage=5
+cst_percentage=2
+discount_amount=(discount_percentage/100)*amount
+cst_amount=(cst_percentage/100)*amount
+final_amount=amount+cst_amount-discount_amount
+print(final_amount)
+```
 ## OUTPUT
-Total Marks: {'Alice': 433, 'Bob': 423, 'Charlie': 460, 'David': 434}
-Topper: Charlie with 460 marks
+
+<img width="1183" height="190" alt="image" src="https://github.com/user-attachments/assets/17e2e2e8-1a19-4e35-b2b8-90535b79f63e" />
 
 ## RESULT
 The program successfully identifies the top-performing student by calculating the total marks from a dictionary of student scores.
