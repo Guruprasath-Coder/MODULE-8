@@ -26,46 +26,31 @@ To write a Python program to:
 ---
 
 ## 💻  Program
-```python
-# Number of students
-n = int(input("Enter number of students: "))
-
-students = []
-
-
-for _ in range(n):
-    name = input("Enter student name: ")
-    grade = float(input("Enter student grade: "))
-    students.append([name, grade])
-
-grades = sorted({grade for name, grade in students})
-second_lowest = grades[1]
-
-
-second_lowest_students = [name for name, grade in students if grade == second_lowest]
-second_lowest_students.sort()
-
-for student in second_lowest_students:
-    print(student)
-
-## Sample Input
-
-5
-Harry
-37.21
-Berry
-37.21
-Tina
-37.2
-Akriti
-41
-Harsh
-39
-
+```
+l1=[]
+l2=[]
+for _ in range(int(input())):
+    name = input()
+    score = float(input())
+    l1.extend([name, score])
+    l2.append(l1)
+    l1=[]
+l3=[]
+l4=[]
+for i in l2:
+    l3.append(i[1])
+l3.sort()
+for i in l2:
+    if i[1]==l3[1]:
+        l4.append(i[0])
+l4.sort()
+for i in l4:
+    print(i)
+```
 ## Output
 
-Harry
-Berry
+<img width="1185" height="438" alt="image" src="https://github.com/user-attachments/assets/f9fd95cc-e206-4ebc-a889-9afe0904b195" />
+
 
 ## Result
 The program successfully identifies and prints the names of students with the second lowest grade in alphabetical order.
